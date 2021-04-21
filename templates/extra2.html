@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hello, {{name}}!</h1>
+    <h4>Today's technology headlines are..</h4>
+    <table>
+        <thead>
+            <td>Title</td>
+            <td>Thumbnail</t>
+        </thead>
+        <tbody>
+            {% for info in total_info %}
+                <tr>
+                    <td><a href="{{ info.url }}">{{ info.title }}</a></td>
+                    <td><img src="{{ info.image }}"></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
